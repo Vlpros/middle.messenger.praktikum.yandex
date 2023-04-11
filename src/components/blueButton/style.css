@@ -1,0 +1,13 @@
+.main__blueButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 10px 80px;
+    background-color: #3369F3;
+    border-radius: 15px;
+    border: none;
+    color: #FFFFFF;
+    cursor: pointer;
+    margin-bottom: 14px;
+}
