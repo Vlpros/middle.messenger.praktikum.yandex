@@ -1,0 +1,51 @@
+.con__mainSectionSettings {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 510px;
+}
+
+.con__mainSectionSettings > form {
+    width: 100%;
+    margin-bottom: 60px;
+
+
+}
+
+.head__mainSectionSettings {
+    display: flex;
+    margin-bottom: 60px;
+    flex-direction: column;
+    align-items: center;
+
+
+}
+
+.photo__mainSettings {
+    min-width: 130px;
+    max-width: 130px;
+    min-height: 130px;
+    max-height: 130px;
+    border-radius: 55%;
+    margin-bottom: 20px;
+
+}
+
+.photo__mainSettings {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 130px;
+    min-height: 130px;
+    max-height: 130px;
+    max-width: 130px;
+    margin-bottom: 21px;
+    background-color: #efefef;
+    border-radius: 50%;
+}
+
+.name__mainSettings {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 16px;
+}

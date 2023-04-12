@@ -1,30 +1,30 @@
-<div class="main__authorization">
-    <div class="wrap__authorization">
+<div class="main__auth">
+    <div class="co__auth">
         {{#if signIn}}
-            <div class="title__authorization">
+            <div class="title__auth">
                 {{titleSignIn}}
             </div>
-            <div class="wrapForm__authorization">
-                <form autocomplete="off" class="form__authorization">
-                    <div class="wrapInputs__authorization">
+            <div class="conForm__auth">
+                <form autocomplete="off" class="form__auth">
+                    <div class="inputs__auth">
                         {{{inputLoginAuth}}}
                     </div>
                 </form>
-                <div class="wrapButtons__authorization">
+                <div class="buttons__authorization">
                     {{{blueButtonSignIn}}}
                     {{{hrefRegSignIn}}}
                 </div>
             </div>
         {{/if}}
         {{#if signUp}}
-            <div class="title__authorization">
+            <div class="title__auth">
                 {{titleSignUp}}
             </div>
-            <form autocomplete="off" class="form__authorization">
-                <div class="wrapInputs__authorization">
+            <form autocomplete="off" class="form__auth">
+                <div class="inputs__auth">
                     {{{inputLoginReg}}}
                 </div>
-                <div class="wrapButtons__authorization">
+                <div class="buttons__auth">
                     {{{blueButtonSignUp}}}
                     {{{hrefRegSignUp}}}
                 </div>

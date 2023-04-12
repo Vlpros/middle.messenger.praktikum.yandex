@@ -1,7 +1,7 @@
 import tpl from './tpl.hbs';
 import './style.css';
-import backSection from "./backSection";
-import mainSection from "./mainSection";
+import secContainer from "./secCon";
+import mainContainer from "./firstCon";
 import buttonSettings from "../../components/buttonSettings";
 import * as noAvatar from '../../../static/noAvatar.svg';
 import inputSettings from "../../components/inputSettings";
@@ -27,7 +27,7 @@ const buttons = {
     ]
 };
 
-const simpleButtons = {
+const defaultButtons = {
     name: 'Сохранить',
     type: 'submit',
 }
@@ -152,7 +152,7 @@ const inputsChangePassword = {
     ],
 };
 
-const dataMainSection = {
+const dataSection = {
     photo: false,
     noAvatar: noAvatar,
     name: 'Владимир',
@@ -163,16 +163,16 @@ const dataMainSection = {
     inputChange: inputSettings(inputsChange),
     changePassword: false,
     inputsChangePassword: inputSettings(inputsChangePassword),
-    simpleButton: simpleButton(simpleButtons),
+    simpleButton: simpleButton(defaultButtons),
 };
 
 const data = {
-    backSection,
-    mainSection: mainSection(dataMainSection),
+    backSection: secContainer,
+    mainSection: mainContainer(dataSection),
 };
 
-const userSettingsPage = () => {
+const settingsPage = () => {
     return tpl(data);
 };
 
-export default userSettingsPage;
+export default settingsPage;

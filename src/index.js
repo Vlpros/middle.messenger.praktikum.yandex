@@ -1,8 +1,8 @@
 import tpl from './index.hbs';
 import './style.css';
-import chatPage from "./pages/chat";
-import authorizationPage, {dataAuthorization, dataRegistration} from "./pages/authorization";
-import userSettingsPage from "./pages/userSettings";
+import chattingPage from "./pages/chat";
+import authPage, {dataAuthorization, dataRegistration} from "./pages/authorization";
+import settingsPage from "./pages/userSettings";
 import page400, {component400} from "./pages/400";
 import page500, {component500} from "./pages/500";
 
@@ -11,22 +11,22 @@ const indexData = {
         {
             title: 'Страница авторизации',
             link: 'sign-in',
-            pageFunction: authorizationPage,
+            pageFunction: authPage,
         },
         {
             title: 'Страница регистрации',
             link: 'sign-up',
-            pageFunction: authorizationPage,
+            pageFunction: authPage,
         },
         {
             title: 'Страница списка чатов и ленты переписок',
             link: 'chat',
-            pageFunction: chatPage,
+            pageFunction: chattingPage,
         },
         {
             title: 'Страница настроек пользователя',
             link: 'userSettings',
-            pageFunction: userSettingsPage,
+            pageFunction: settingsPage,
         },
         {
             title: 'Страница 404',
@@ -50,13 +50,13 @@ const domain = window.location.origin;
 if (window.location.href === `${domain}/`) {
     document.getElementById('root').innerHTML = indexPage(indexData);
 } else if (window.location.href === `${domain}/sign-in`) {
-    document.getElementById('root').innerHTML = authorizationPage(dataAuthorization);
+    document.getElementById('root').innerHTML = authPage(dataAuthorization);
 } else if (window.location.href === `${domain}/sign-up`) {
-    document.getElementById('root').innerHTML = authorizationPage(dataRegistration);
+    document.getElementById('root').innerHTML = authPage(dataRegistration);
 } else if (window.location.href === `${domain}/chat`) {
-    document.getElementById('root').innerHTML = chatPage();
+    document.getElementById('root').innerHTML = chattingPage();
 } else if (window.location.href === `${domain}/userSettings`) {
-    document.getElementById('root').innerHTML = userSettingsPage();
+    document.getElementById('root').innerHTML = settingsPage();
 } else if (window.location.href === `${domain}/500`) {
     document.getElementById('root').innerHTML = page500(component500);
 } else if (window.location.href === `${domain}/404`) {

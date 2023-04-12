@@ -1,7 +1,7 @@
 import tpl from './tpl.hbs';
 import './style.css';
 import hrefReg from "../../components/hrefReg";
-import errorPage from "../../components/errorPage";
+import errorPage from "../../components/error";
 
 const page500Data = {
     number: '500',
