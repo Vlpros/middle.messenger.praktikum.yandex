@@ -12,9 +12,9 @@ import inputMessage from "../../../../components/inputMessage";
 const data = {
     photo: false,
     noAvatar: noAvatar,
-    name: 'Вадим',
+    name: 'Владимир',
     settingsSvg: settings,
-    date: '7 january',
+    date: '5 april',
     clipSvg: clip,
     sent: sentArrow,
     incomingMessage,
