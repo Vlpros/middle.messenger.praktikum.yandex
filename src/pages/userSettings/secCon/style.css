@@ -1,0 +1,9 @@
+.con__secCon {
+    display: flex;
+    background-color: #FBFBFB;
+    height: 100%;
+    width: 64px;
+    justify-content: center;
+    align-items: center;
+    border-right: 1px solid #EAEAEA;
+}

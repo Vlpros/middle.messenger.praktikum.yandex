@@ -8,8 +8,8 @@ const data ={
     searchIcon,
 }
 
-const inputSearchComponent = () => {
+const inputSearchComp = () => {
     return tpl(data);
 }
 
-export default inputSearchComponent;
+export default inputSearchComp;

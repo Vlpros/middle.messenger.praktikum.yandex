@@ -1,0 +1,14 @@
+.main__blue {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 10px 80px;
+    align-items: center;
+    background-color: #3369F3;
+    color: #FFFFFF;
+    cursor: pointer;
+    margin-bottom: 14px;
+    border-radius: 15px;
+    border: none;
+
+}

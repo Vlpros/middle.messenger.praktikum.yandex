@@ -1,6 +1,6 @@
 import tpl from './tpl.hbs';
 import './style.css';
-import * as cameraPhoto from '../../../static/cameraPhoto.png';
+import * as cameraPhoto from '../../../static/camera.png';
 
 
 const data = {

@@ -1,10 +1,10 @@
 import tpl from './tpl.hbs';
 import './style.css';
 import inputLoginAuth from "../../components/inputLoginAuth";
-import blueButton from "../../components/blueButton";
+import Button from "../../components/button";
 import hrefReg from "../../components/hrefReg";
 
-const inputsSignIn = {
+const signIn = {
     inputsSignIn: [
         {
             label: 'Логин',
@@ -21,7 +21,7 @@ const inputsSignIn = {
     ],
 };
 
-const inputsSignUp = {
+const signUp = {
     inputsSignUp: [
         {
             label: 'Почта',
@@ -70,22 +70,22 @@ const inputsSignUp = {
 
 export const dataAuthorization = {
     titleSignIn: 'Вход',
-    inputLoginAuth: inputLoginAuth(inputsSignIn),
+    inputLoginAuth: inputLoginAuth(signIn),
     signIn: true,
-    blueButtonSignIn: blueButton({value: 'Авторизоваться'}),
+    blueButtonSignIn: Button({value: 'Авторизоваться'}),
     hrefRegSignIn: hrefReg({href: '/sign-up', value: 'Нет аккаунта?'}),
 };
 
 export const dataRegistration = {
     titleSignUp: 'Регистрация',
-    inputLoginReg: inputLoginAuth(inputsSignUp),
+    inputLoginReg: inputLoginAuth(signUp),
     signUp: true,
-    blueButtonSignUp: blueButton({value: 'Зарегистрироваться'}),
+    blueButtonSignUp: Button({value: 'Зарегистрироваться'}),
     hrefRegSignUp: hrefReg({href: '/sign-in', value: 'Войти'}),
 }
 
-const authorizationPage = (data) => {
+const authPage = (data) => {
     return tpl(data);
 }
 
-export default authorizationPage;
+export default authPage;

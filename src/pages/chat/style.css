@@ -1,18 +1,23 @@
-.main__chat {
-    display: flex;
-    height: 100%;
+.chat {
     width: 100%;
+    height: 100%;
+    display: flex;
 }
 
-.leftSide__chat {
-    display: flex;
-    height: 100%;
+.leftSide {
     width: calc(25% + 6px);
+    height: 100%;
+    display: flex;
     border-right: 1px solid #EAEAEA;
 }
 
-.rightSide__chat {
-    display: flex;
-    width: calc(75% - 6px);
+.rightSide {
     height: 100%;
+    width: calc(75% - 6px);
+    display: flex;
 }
+
+
+
+
+
