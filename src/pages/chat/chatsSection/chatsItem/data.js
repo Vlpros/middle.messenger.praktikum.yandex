@@ -38,7 +38,7 @@ export const data = {
         },
         {
             photo: '',
-            name: 'Вадим',
+            name: 'Владимир',
             message: 'Клёво!',
             you: true,
             isUnread: false,
