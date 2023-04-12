@@ -10,13 +10,13 @@ const inputsSignIn = {
             label: 'Логин',
             name: 'login',
             type: 'text',
-            value: 'vladimirAdmin',
+            value: 'vladimir',
         },
         {
             label: 'Пароль',
             name: 'password',
             type: 'password',
-            value: 'qwerty',
+            value: 'parol',
         },
     ],
 };
@@ -33,7 +33,7 @@ const inputsSignUp = {
             label: 'Логин',
             name: 'login',
             type: 'text',
-            value: 'parol',
+            value: 'vladimir',
         },
         {
             label: 'Имя',
@@ -51,7 +51,7 @@ const inputsSignUp = {
             label: 'Телефон',
             name: 'phone',
             type: 'text',
-            value: '+7 (999)999-99-11',
+            value: '+7 (999) 999-99-11',
         },
         {
             label: 'Пароль',
