@@ -1,0 +1,46 @@
+.indexPage {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    color: #1E1E1E;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    text-align: center;
+}
+
+ul.index__ul {
+    margin: 10px;
+    color: grey;
+    font-size: 15px;
+
+    /*padding: 0;*/
+    list-style: none;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+    color: #1E1E1E;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+}
+
+span {
+    margin: 0;
+    padding: 0;
+    color: #1E1E1E;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+}
+a{
+    color: grey;
+    margin-bottom: 10px;
+    text-decoration: none;
+}
+li{
+    margin-bottom: 10px;
+
+}
